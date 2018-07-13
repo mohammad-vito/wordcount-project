@@ -1,0 +1,8 @@
+<a href="{% url 'home' %}">home</a>
+<h1>there are {{ count }}</h1>
+<br />
+
+{% for word, counter in worddictionary %}
+{{ word }}- {{ counter }}
+<br />
+{% endfor %}
